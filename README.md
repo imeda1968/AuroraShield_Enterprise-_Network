@@ -1,137 +1,96 @@
-📘 AuroraShield Enterprise Network — Cisco Professional Submission
-🔍 Overview
+# AuroraShield Enterprise Network  
+**Enterprise-Grade Multi-Layer Campus Network with Dual-ISP Redundancy (Cisco Certification Submission)**  
+Author: **Imeda Sheriphadze**  
+Contact: **isheriphadze@gmail.com | +995 555 45 92 70**
 
-AuroraShield Enterprise Network წარმოადგენს სრული მასშტაბის, მულტილეველ, უსაფრთხო და რედუნდანტულ კორპორატიულ ქსელს Dual–ISP Failover არქიტექტურით.
-პროექტი შექმნილია Cisco-ს ოფიციალური სტანდარტების მიხედვით და მოიცავს:
+---
 
-Enterprise Core & Distribution Layer redundancy
+## 📌 Project Overview  
+AuroraShield Enterprise Network is a fully designed enterprise-class multi-layer campus infrastructure that integrates:  
 
-Multilayer Switching (L2/L3 switching)
+- Dual-ISP high-availability WAN edge  
+- Multi-Layer switching (Core / Distribution / Access)  
+- Scalable VLAN segmentation  
+- OSPF routed core with rapid convergence  
+- DHCP, DNS, NAT, ACL security policies  
+- IT-Service DMZ (WEB, FTP, Admin server farm)  
+- Redundant interconnections (multiple /30 routed links)  
+- Dedicated Management VLANs and isolated User VLANs  
 
-Dynamic Routing (OSPFv2, MD5 Authentication)
+The project follows Cisco enterprise architecture standards and is submitted as part of the **Cisco Professional Lab-Level Network Design** evaluation.
 
-Dual-ISP Failover (Primary/Backup ISP)
+---
 
-Enterprise Security (ACL, Port-Security, DHCP Security)
+## 📁 Repository Structure  
 
-VLAN segmentation (Management, IT, Web, DB, Accounting, HR, Admin)
+---
 
-Servers Integration (Web, FTP, IC-Server, Admin)
+## 🧩 Main Components  
 
-Full DHCP Infrastructure across all Access Networks
+### ⭐ Dual-ISP Redundancy  
+- **ISP1 / ISP2 failover**
+- Load-sharing architecture  
+- Edge routers 7206VXR with secured OSPF adjacency  
 
-High-Availability Topology across entire campus
+### ⭐ Core Layer  
+- vIOS core switches  
+- /30 point-to-point routed backbone  
+- High-speed redundant links  
 
-🏗 Architecture Highlights
+### ⭐ Distribution Layer  
+- Aggregation of multiple access VLANs  
+- Security filtering (ACLs)  
+- QoS classification paths  
 
-3-Layer Architecture: Core → Distribution → Access
+### ⭐ Access Layer  
+- User VLANs  
+- Management VLANs  
+- IT-Service network  
+- DHCP, DNS integration  
 
-Dynamic Routing: OSPF Area 0
+### ⭐ Server Zone (DMZ Style)  
+- Web Server (VLAN-80)  
+- FTP Server (VLAN-90)  
+- DC Server (VLAN-69)  
+- Administrator station (VLAN-70)  
 
-Point-to-Point routed links: /30 and /31 subnets
+---
 
-3-level department structuring: HR, IT-Service, Accounting, Management
+## 🎯 Goal of the Project  
+Provide a fully functional, secure, scalable and redundant Enterprise Campus network using only Cisco methodologies and design principles.  
+This repository contains all required elements for full Cisco project evaluation.
 
-High-Availability ISP Redundancy: ISP1 (primary), ISP2 (backup)
+---
 
-Complete Server Room Integration
+## 📦 Submission Package  
+The **Submission/** folder includes:
 
-Enterprise-Level Security Policies
+### ✔ Full ZIP/7z Archive for Cisco  
+- All configs  
+- All network diagrams  
+- All documentation PDFs  
+- Presentation file  
+- Cover Letter  
 
-🗂 Repository Structure
-AuroraShield_Enterprise_Network/
-│
-├── Configurations/              
-│     └── Full-Device-Configs.pdf
-│
-├── Diagrams/
-│     └── Enterprise-Topology.png
-│
-├── Documentation/
-│     └── AuroraShield-Enterprise-Campus.pdf
-│
-├── Presentation/
-│     └── AuroraShield-Enterprise-Campus.pptx
-│
-├── Submission/
-│     └── AuroraShield-Enterprise-Network.7z
-│
-└── README.md
+This is the package recommended for official Cisco submission.
 
-🧩 Folder Descriptions
-📁 Configurations/
+---
 
-შეიცავს ყველა Router/Switch-ის სრული კონფიგურაციების PDF-ს
-IOS 15.2+ და L2/L3 IOU/VIOS მოწყობილობების სრული output:
+## 📄 License  
+This project is created and owned by **Imeda Sheriphadze**.  
+All rights reserved.  
+Use of this project is permitted only for certification, educational or review purposes.
 
-Interface Configuration
+---
 
-OSPF MD5 Authentication
+## 📬 Contact  
+For questions or verification, please contact:
 
-DHCP Pools
+**Imeda Sheriphadze**  
+✉ Email: *isheriphadze@gmail.com*  
+📞 Phone: *+995 555 45 92 70*
 
-NAT Overload
+---
 
-ACL Rules
+### ✔ Status: **Ready for Cisco Submission**
 
-VLAN & Trunking
-
-Port Security
-
-Server Network Integration
-
-📁 Diagrams/
-
-📌 High-Resolution PNG Enterprise Topology Diagram
-შეიცავს:
-
-Full network map
-
-Distribution layer interconnects
-
-Server room layout
-
-ISP failover scheme
-
-Routed interlinks (/30)
-
-VLAN Segments Diagram
-
-📁 Documentation/
-
-📘 AuroraShield Enterprise Campus – Full Documentation (PDF)
-შეიცავს:
-
-Network Overview
-
-Functional Description
-
-IP Addressing Plan
-
-VLAN Table
-
-Routing Design
-
-Server Architecture
-
-Security Architecture
-
-Failover Mechanisms
-
-📁 Presentation/
-
-🎤 PowerPoint Presentation როგორც ოფიციალური Cisco-სთვის შესათავაზებელი:
-
-Architecture Summary
-
-Technical Breakdown
-
-Topology Flow
-
-Security Overview
-
-Failover Testing Results
-
-📁 Submission/
-
-📦 Final 7z/ZIP package for Cisco Review
